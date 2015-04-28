@@ -119,6 +119,18 @@
       "versions":{
         "1.4.0-SNAPSHOT":"0"
       }
+    },
+    {
+      "currentVersion":"alpha",
+      "description":"Resolves HTTP requests to mesos-dns registered services.",
+      "framework":false,
+      "name":"srv-router",
+      "tags":[
+        "proxy"
+      ],
+      "versions":{
+        "alpha":"0"
+      }
     }
   ],
   "version":"0.1.0-alpha"

@@ -1,0 +1,7 @@
+{
+  "name": "srv-router",
+  "version": "alpha",
+  "tags": ["proxy"],
+  "maintainer": "shawn.siefkas@meredith.com",
+  "description": "Resolves HTTP requests to mesos-dns registered services."
+}

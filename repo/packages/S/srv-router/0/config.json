@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "mesos/master": {
+      "description": "The hostname of the Mesos master.",
+      "type": "string",
+      "default": "master.mesos"
+    },
+    "srv-router/domains": {
+      "description": "Comma separated list of external domains that the balanced services handle.",
+      "type": "string",
+      "default": "lvh.me,%d+.%d+.%d+.%d+.xip.io,9zlhb.xip.io"
+    }
+  },
+  "required": []
+}

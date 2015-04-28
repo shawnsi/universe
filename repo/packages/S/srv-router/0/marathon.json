@@ -1,0 +1,29 @@
+{
+  "id": "srv-router",
+  "instances": 1,
+  "mem": 256,
+  "env": {
+    "DOMAINS": "{{srv-router/domains}}",
+    "NS_IP": "{{mesos/master}}",
+    "RFC2782": "true",
+    "TARGET": "marathon.mesos"
+  },
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "shawnsi/srv-router:mesos-dns",
+      "network": "BRIDGE",
+      "parameters": [
+        {"key": "tty", "value": "true"}
+      ],
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "hostPort": 0,
+          "servicePort": 0,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  }
+}
